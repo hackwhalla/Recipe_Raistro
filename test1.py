@@ -42,4 +42,13 @@ Recipe Instruction:
 13. Remove the biscuits from the tray and cool on a wire rack.
 14. Yield, 10-15 biscuits.
 
-Thankyou.""""
+Thankyou."""
+
+#includeIngredients = input("includeIngredients").split(" ")
+#print(includeIngredients)
+
+
+includeIngredients = input("Enter ingredients (optional): ").strip() or "None"
+if includeIngredients:
+    includeIngredients = includeIngredients.split(" ")
+print(includeIngredients) 
