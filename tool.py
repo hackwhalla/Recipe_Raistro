@@ -13,7 +13,7 @@ def protein(min_protein:int, max_protein:int, page:int):
 }
   headers = {
     "Content-Type": "application/json",
-    "Authorization": "Bearer XlufLlIDIYBhbcEmL99u32CcvviMl6ZE6OB1Y8r3bs9_TPOW",
+    "Authorization": "Bearer ",
 }
 
   response = requests.get(url, params=params, headers=headers)
@@ -36,7 +36,7 @@ def Energy(min_energy:int, max_energy:int, page:int):
 
     headers = {
     "Content-Type": "application/json",
-    "Authorization": "Bearer XlufLlIDIYBhbcEmL99u32CcvviMl6ZE6OB1Y8r3bs9_TPOW",
+    "Authorization": "Bearer ",
     }
 
     response = requests.get(
@@ -63,7 +63,7 @@ def Carbs(min_carbs:int, max_carbs:int):
 
     headers = {
     "Content-Type": "application/json",
-    "Authorization": "Bearer XlufLlIDIYBhbcEmL99u32CcvviMl6ZE6OB1Y8r3bs9_TPOW",
+    "Authorization": "Bearer ",
 }
 
     response = requests.get(
@@ -90,7 +90,7 @@ def diet_by_region(Region:str, diet:str):
 
     headers = {
     "Content-Type": "application/json",
-    "Authorization": "Bearer XlufLlIDIYBhbcEmL99u32CcvviMl6ZE6OB1Y8r3bs9_TPOW",
+    "Authorization": "Bearer ",
   }
 
     response = requests.get(
@@ -122,7 +122,7 @@ def including_and_excluding_ingredients_categories_and_title(includeIngredients:
 
     headers = {
     "Content-Type": "application/json",
-    "Authorization": "Bearer XlufLlIDIYBhbcEmL99u32CcvviMl6ZE6OB1Y8r3bs9_TPOW",
+    "Authorization": "Bearer ",
     }
 
     response = requests.get(
@@ -142,7 +142,7 @@ def recipe_instruction(recipe_id: int):
 
   headers = {
     "Content-Type": "application/json",
-    "Authorization": "Bearer XlufLlIDIYBhbcEmL99u32CcvviMl6ZE6OB1Y8r3bs9_TPOW",
+    "Authorization": "Bearer ",
   }
 
   response = requests.get(
@@ -161,7 +161,7 @@ def ingrendints(Recipe_id: int):
 
   headers = {
     "Content-Type": "application/json",
-    "Authorization": "Bearer XlufLlIDIYBhbcEmL99u32CcvviMl6ZE6OB1Y8r3bs9_TPOW",
+    "Authorization": "Bearer ",
   }
 
   response = requests.get(
@@ -186,7 +186,7 @@ def recipe_with_title(title:str):
 
     headers = {
     "Content-Type": "application/json",
-    "Authorization": "Bearer XlufLlIDIYBhbcEmL99u32CcvviMl6ZE6OB1Y8r3bs9_TPOW",
+    "Authorization": "Bearer ",
 }
 
     response = requests.get(
@@ -194,5 +194,6 @@ def recipe_with_title(title:str):
     params=params,
     headers=headers
 )
+
 
     return response.json()
